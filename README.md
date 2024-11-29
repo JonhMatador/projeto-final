@@ -33,8 +33,27 @@ As cores possiveis para utilização são:
 
 | RGB             | Hexadecimal | Cor Exibida   |
 |-----------------|-------------|---------------|
-| rgb(255, 255, 255) | #FFFFFF     | <span style="color: #FFFFFF;">COR</span> |
-| rgb(0, 86, 179)   | #0056b3     | <span style="color: #0056b3;">COR</span> |
-| rgb(0, 0, 0)      | #000000     | <span style="color: #000000;">COR</span> |
+| rgb(255, 255, 255) | #FFFFFF     | <span style="color: #FFFFFF;">Branco</span> |
+| rgb(0, 86, 179)   | #0056b3     | <span style="color: #0056b3;">Azul Claro</span> |
+| rgb(0, 0, 0)      | #000000     | <span style="color: #000000;">Preto</span> |
 
 ---
+
+## Projeto
+
+### Banco
+
+#### Estrutura conceitual
+
++----------------+       +------------------+
+|    Usuário     |       |     Tarefa       |
++----------------+       +------------------+
+| id             |<----- | id_usuario       |
+| nome           |       | id               |
+| email          |       | descricao_tarefa |
++----------------+       | nome_do_setor    |
+                         | prioridade       |
+                         | data_de_cadastro |
+                         | status           |
+                         +------------------+
+
