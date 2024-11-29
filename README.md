@@ -34,7 +34,7 @@ As cores possiveis para utilização são:
 | RGB             | Hexadecimal | Cor Exibida   |
 |-----------------|-------------|---------------|
 | rgb(255, 255, 255) | #FFFFFF     | <span style="background-color: #FFFFFF; width: 50px; height: 30px; display: inline-block; border: 1px solid #ccc;">COR</span> |
-| rgb(0, 86, 179)   | #0056b3     | <span style="background-color: #0056b3; width: 50px; height: 30px; display: inline-block; border: 1px solid #ccc;">COR</span> |
+| rgb(0, 86, 179)   | #0056b3     | <span style="color: #0056b3">COR</span> |
 | rgb(0, 0, 0)      | #000000     | <span style="background-color: #000000; width: 50px; height: 30px; display: inline-block; border: 1px solid #ccc;">COR</span> |
 
 ---
