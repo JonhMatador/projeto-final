@@ -43,17 +43,38 @@ As cores possiveis para utilização são:
 
 ### Banco
 
-#### Estrutura conceitual
+#### Estrutura Conceitual de Dados
 
-+----------------+       +------------------+
-|    Usuário     |       |     Tarefa       |
-+----------------+       +------------------+
-| id             |<----- | id_usuario       |
-| nome           |       | id               |
-| email          |       | descricao_tarefa |
-+----------------+       | nome_do_setor    |
-                         | prioridade       |
-                         | data_de_cadastro |
-                         | status           |
-                         +------------------+
+##### Entidade: Usuário
+A tabela **Usuário** armazena informações dos usuários do sistema.
+
+| **Campo** | **Tipo**     | **Descrição**               |
+|-----------|--------------|-----------------------------|
+| id        | INT (PK)     | Identificador único do usuário |
+| nome      | VARCHAR(255) | Nome do usuário             |
+| email     | VARCHAR(255) | Endereço de e-mail do usuário |
+
+##### Entidade: Tarefa
+A tabela **Tarefa** armazena informações sobre as tarefas cadastradas.
+
+| **Campo**        | **Tipo**     | **Descrição**                                      |
+|------------------|--------------|----------------------------------------------------|
+| id               | INT (PK)     | Identificador único da tarefa                      |
+| id_usuario      | INT (FK)     | Identificador do usuário que cadastrou a tarefa (chave estrangeira) |
+| descricao_tarefa| TEXT         | Descrição detalhada da tarefa                      |
+| nome_do_setor   | VARCHAR(255) | Nome do setor relacionado à tarefa                 |
+| prioridade      | ENUM('baixa', 'media', 'alta') | Prioridade da tarefa          |
+| data_de_cadastro| DATETIME     | Data de cadastro da tarefa                         |
+| status          | ENUM('a fazer', 'fazendo', 'pronto') | Status da tarefa              |
+
+##### Relacionamento entre as Entidades
+- **Usuário** e **Tarefa** possuem um relacionamento **1 para N** (um para muitos), onde um usuário pode ter várias tarefas, mas cada tarefa é associada a apenas um usuário.
+- A tabela **Tarefa** possui uma chave estrangeira **`id_usuario`** que referencia a chave primária **`id`** da tabela **Usuário**.
+
+
+###### Observações:
+- **Usuário** pode cadastrar várias **Tarefas**.
+- Cada **Tarefa** está associada a um único **Usuário**.
+
+
 
