@@ -19,7 +19,7 @@ Um usuario pode cadastrar uma ou mais tarefas, porém a tarefa é cadastrada por
 
 - Gerenciar a mesma (Se selecionada);
 
-- ["Alterar status", "Prioridades", NULL];
+- ["Alterar status", "Prioridades"];
 
 #### Apresentação
 
@@ -80,6 +80,7 @@ A tabela **Tarefa** armazena informações sobre as tarefas cadastradas.
 
 [Estrutura conceitual](https://app.brmodeloweb.com/#!/publicview/6749adcaf14caaf3dc1dcdea)
 
+[Estrutura logica](https://app.brmodeloweb.com/#!/publicview/6749b039f14caaf3dc1dcef8)
 
 
 
